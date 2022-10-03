@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type contatctInfo struct {
+type contactInfo struct {
 	email   string
 	zipCode int
 }
@@ -10,14 +10,14 @@ type contatctInfo struct {
 type person struct {
 	firstName string
 	lastName  string
-	contatctInfo
+	contactInfo
 }
 
 func main() {
 	jim := person{
 		firstName: "Jim",
 		lastName:  "Party",
-		contatctInfo: contatctInfo{
+		contactInfo: contactInfo{
 			email:   "jim@gmail.com",
 			zipCode: 94000,
 		},
